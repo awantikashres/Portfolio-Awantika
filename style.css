@@ -1,0 +1,39 @@
+* {
+	font-size: 25px;
+	font: sans-serif;
+}
+
+    section {
+		min-height: 200px;
+  		border:2px soild;
+  		padding-left: 100px;
+		}
+
+		#banner{
+			background-color: yellow;
+		}
+
+		#section2 {
+			background-color: pink;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left: 300px;
+			min-height: 400px;
+		}
+		#section3{
+			background-color: green;
+		}
+
+		.link {
+			text-decoration: none;
+		}
+
+		nav{
+			margin-top: 50px;
+			margin-bottom: 50px;
+			background-color: lavender;
+			min-height: 50px;
+			padding-top: 25px;
+			text-align: center;
+		  }
+}
