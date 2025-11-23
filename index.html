@@ -2,72 +2,91 @@
 <html lang="en">
 
 <head>
-	<title>Group 8</title>
-	<meta charset="utf=8">
+	<title>Personal Portfolio</title>
+	<meta charset="utf-8">
 	<link rel = "stylesheet" type="text/css" href="style.css">
-	<!-- <style>
-		* {
-			font-size: 25px;
-			font: sans-serif;
-		}
-
-		section {
-			min-height: 200px;
-
-		}
-
-		#banner{
-			background-color: yellow;
-		}
-
-		#section2 {
-			background-color: pink;
-		}
-		#section3{
-			background-color: green;
-		}
-	</style> -->
 </head>
 
 
 <body>
-	<header>
-		<h1 style = "text-align: center; font-size: 40px;">GROUP 8</h1>
-		<nav>
-			<a class="link"href="#">Home</a>  
-			<a href="link">About</a>
-			<a href="link">Contact</a>
-		</nav>	
+	<!-- header -->
+	<header>   
+		<img src = "Photo.jpg" alt = "My Photo" class="profile-pic"> 
+		<h1 style = "text-align: center; font-size: 40px;">My Personal Portfolio</h1>
+		<p>Web Developer . Designer . Creator . Student</p>
 	</header>
-	<section id = "banner" style="border: 3px solid; ">
-		<h2>This is for the banner</h2>
+
+	<!-- navigator section -->
+		<nav>
+			<ul>
+            	<li><a href="#about">About</a></li>
+            	<li><a href="#projects">Projects</a></li>
+            	<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>	
+
+	<!-- About Section -->
+	<section id = "about">
+		<h2>About me</h2>
+		<p>
+			Hello! I am currently a student at Herald College Kathmandu who is passionate about web developing and mainly focused on creating a user friendly interface. I enojy making clean codes and solve the probelms. The degins I make are neat and up-to-date making it easily adaptable in the current time. 
+		</p>
 	</section>
 
-	<main>
-		<aside style="background-color: skyblue; float: left; width: 200px; min-height: 400px;">
-			<ul>
-				<li>
-					<a class ="links" href = "#">Link1</a>
-				</li>
-				<li>
-					<a class = "#links" href="#"> Link2</a>
-				</li>
-				<li>
-					<a class="links" href = "#"> Link3</a>
-				</li>
-			</ul>
-		</aside>
+	<!-- Projects section -->
+	<section id = "projects">
+		<h2>Projects</h2>
 
-		<section id="section2" style="border:5px solid;  ">
-			<h2>This is for section 2</h2>
-		</section>
-		<section id="section3">
-			<h2>This is for section 3</h2>
-		</section>
-	</main>
+		<div class = "project-container">
 
-	<footer style = "text-align: center; border: 5px solid; background-color: grey;">
-		@copy All rights reserved @2025
+			<div class="project-card">
+				<img src="Portfolio.png" alt = "Pertfolio Screeshot" class = "project-img">
+				<div class = "project-info">
+					<h3>Portfolio Page</h3>
+					<p>
+						A clean portfolio page built with HTML and CSS created from scratch.
+					</p>
+				</div>
+			</div>
+
+		    <div class="project-card">
+		    	<img src="WeatherApp.png" alt="Weather App Screenshot" class = "project-img">
+		    	<div class="project-info">
+					<h3>Weather App</h3>
+					<p>
+						A fully responsive real-time fetching weather app using external API.
+					</p>
+				</div>
+			</div>
+ 
+			<div class="project-card">
+				<img src = "MovieApp.png" alt="Movie App Screenshot" class = "project-img">
+				<div class="project-info">
+					<h3>Movie App</h3>
+					<p>
+						A fully responsive movie app that presents the movie that has 	been searched.
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id = "contact">
+		<h2>Contact Me</h2>
+
+		<form>
+			<input type="text" id="name" name="name" placeholder="Your Name" required>
+			<input type = "text" id = "email" name = "email" placeholder="Your email" required>
+			<textarea id = "message" name = "message" placeholder="Your Message" required> </textarea>
+			<button type ="submit">Send</button>
+		</form>
+	</section>
+
+	<footer>
+		<p>@copy All rights reserved @2025</p>
 	</footer>
+
 </body>
 </html>
